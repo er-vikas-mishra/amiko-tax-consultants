@@ -1,0 +1,112 @@
+* {box-sizing: border-box;}
+
+body{
+    margin: auto; 
+    background-color: antiquewhite;
+    font-family: Verdana, sans-serif;
+}
+
+.logo {
+    font-size: 5em;
+    font-family: Nokio-Medium;
+    color:#2b084c;
+    background-color: white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Nokio-Medium;
+    src: url("/fonts/Nokio-Medium.ttf");
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    flex: 1;
+    border-right: 1px solid #dee2e6 !important;
+    align-self: center;
+}
+
+.right{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-right-up{
+    display: flex;
+    flex: 1;
+    background-color: white;
+    align-items: center;
+}
+
+.header-right-down{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: WhiteSmoke;
+}
+
+.menu{
+    padding: 10px;
+}
+
+
+.mySlides {display: none;}
+
+.banner {
+    position: relative;
+    margin: auto;
+}
+
+.banner img{
+    width: 100%;
+    vertical-align: middle;
+    height: 60vh;
+}
+
+
+.fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.banner-text {
+    color: #2b084c;
+    font-size: 1.2em;
+    padding: 8px 12px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s ease;
+  }
+
+  .active {
+    background-color: red;
+  }
